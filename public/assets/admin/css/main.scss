@@ -1,0 +1,23 @@
+#categories {
+  .row-actions {
+    position: absolute;
+    margin-top: 5px;
+    color:#ccc;
+    font-size: 13px;
+    a {
+      padding:0 5px;
+    }
+    .delete-tag {
+      color:#a00;
+      &:hover {
+        color:red;
+      }
+    }
+  }
+
+  table#terms {
+      td {
+        padding-bottom: 25px;
+      }
+  }
+}
