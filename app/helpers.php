@@ -2,10 +2,7 @@
 namespace App;
 
 class Helpers {
-	/**
-	 * @param $str
-	 * @return mixed
-	 */
+
 	public static function slug($str) {
 		$unicode = array(
 			'a'=>'á|à|ả|ã|ạ|ă|ắ|ặ|ằ|ẳ|ẵ|â|ấ|ầ|ẩ|ẫ|ậ|Á|À|Ả|Ã|Ạ|Ă|Ắ|Ặ|Ằ|Ẳ|Ẵ|Â|Ấ|Ầ|Ẩ|Ẫ|Ậ',
@@ -23,12 +20,6 @@ class Helpers {
 		return $str;
 	}
 
-	/**
-	 * @param $params
-	 * @param int $id_parent
-	 * @param int $depth
-	 * @return string
-	 */
 	public static function create_list($list, $parent_id = null){
 		$html = '<ul>';
 		foreach($list as $key => $row){
@@ -43,12 +34,6 @@ class Helpers {
 		return $html;
 	}
 
-	/**
-	 * @param $tree
-	 * @param int $checked
-	 * @param int $r
-	 * @param null $p
-	 */
 	public static function printTree($tree, $checked = 0, $r = 0, $p = null) {
 		$isChecked = '';
 		foreach ($tree as $i => $t) {
@@ -67,11 +52,7 @@ class Helpers {
 			}
 		}
 	}
-	/**
-	 * @param array $data
-	 * @param int $parent
-	 * @return array
-	 */
+
 	public static function buildTree(Array $data, $parent = 0) {
 		$tree = array();
 		foreach ($data as $d) {
@@ -85,9 +66,6 @@ class Helpers {
 			}
 		}
 		return $tree;
-
-
-
 	}
 
 }
