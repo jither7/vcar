@@ -2,7 +2,7 @@ import {createStore, combineReducers, applyMiddleware, compose} from 'redux'
 import reducer from './reducer'
 import thunk from 'redux-thunk'
 
-import DevTools from './DevTools'
+import DevTools from '../../DevTools'
 
 const initialState = {};
 

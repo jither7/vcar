@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js",
+    "dev": "./node_modules/.bin/webpack-dev-server --config ./src/client/webpack/webpack.dev.config.js",
     "build": "webpack --progress --colors --config ./webpack.production.config.js"
   },
   "repository": {
@@ -36,6 +36,7 @@
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.0",
     "redux-thunk": "^2.2.0",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7"
